@@ -46,6 +46,11 @@ body .hero .text {
   color: white;
   padding-top: 400px;
 }
+body .hero .star {
+  display: flex;
+  align-items: baseline;
+  color: white;
+}
 body .section2 {
   display: flex;
   flex-direction: column;
@@ -76,7 +81,6 @@ body .section3 h4 {
 }
 body .section3 .groupe {
   display: flex;
-  margin: auto;
   width: 60%;
   justify-content: space-between;
   color: white;
@@ -103,8 +107,7 @@ body footer {
   padding-top: 5px;
 }
 body footer ul {
-  width: 80%;
-  margin: auto;
+  width: 45%;
 }
 body footer ul li {
   list-style: none;
@@ -118,8 +121,6 @@ body footer ul li a {
 body footer .politique {
   display: flex;
   justify-content: flex-end;
-  width: 60%;
-  margin: auto;
 }
 body footer .politique p {
   width: 25%;
