@@ -8,22 +8,40 @@ body header nav {
   align-items: baseline;
   margin: auto;
 }
+body header nav .icon {
+  color: black;
+}
 body header nav h1 {
   width: 60%;
 }
-body header nav ul {
-  width: 20%;
+@media (max-width: 768px) {
+  body header nav h1 {
+    width: 80%;
+  }
 }
-body header nav ul li {
-  list-style: none;
+body header nav #myLinks {
   display: flex;
-  justify-content: space-evenly;
 }
-body header nav ul li a {
+@media (max-width: 768px) {
+  body header nav #myLinks {
+    display: none;
+    flex-direction: column;
+  }
+}
+body header nav #myLinks ul li {
+  list-style: none;
+}
+@media (max-width: 768px) {
+  body header nav #myLinks ul li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body header nav #myLinks ul li a {
   text-decoration: none;
   color: #808080;
 }
-body header nav .bouton1 {
+body header nav #myLinks .bouton1 {
   font-size: 15px;
   padding: 6px 25px;
   border-radius: 20px;
@@ -32,11 +50,32 @@ body header nav .bouton1 {
   border: none;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  body header nav #myLinks .bouton1 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 10%;
+  }
+}
+body header nav .icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  body header nav .icon {
+    display: contents;
+  }
+}
 body .hero {
   background-image: url(./assets/hero.jpg);
   height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  body .hero {
+    background-position: center;
+  }
 }
 body .hero .text {
   display: flex;
@@ -92,6 +131,11 @@ body .section3 .groupe {
   color: white;
   padding-bottom: 150px;
 }
+@media (max-width: 768px) {
+  body .section3 .groupe {
+    flex-direction: column;
+  }
+}
 body .section3 .bouton2 {
   font-size: 1em;
   padding: 6px 25px;
@@ -106,6 +150,11 @@ body .map {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  body .map {
+    background-position: center;
+  }
 }
 body footer {
   background-color: #333232;
@@ -146,6 +195,11 @@ body footer .top .icon .fa-facebook {
 body footer .politique {
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  body footer .politique {
+    justify-content: center;
+  }
 }
 body footer .politique p {
   width: 25%;

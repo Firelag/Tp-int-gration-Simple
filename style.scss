@@ -9,29 +9,56 @@ body{
             width: 80%;
             align-items: baseline;
             margin: auto;
+
+            .icon{
+                color: black;
+            }
+
             h1{
                 width: 60%;
+                @media (max-width: 768px){
+                    width: 80%;
+                };
             }
-            ul{
-                width: 20%;
-                li{
-                    list-style: none;
-                    display: flex;
-                    justify-content: space-evenly;
-                    a{
-                        text-decoration: none;
-                        color: $texte;
+            #myLinks{
+                display: flex;
+                @media (max-width: 768px){
+                    display: none;
+                    flex-direction: column;
+                };
+                ul{
+                    
+                    li{
+                        list-style: none;
+                        @media (max-width: 768px){
+                            display: flex;
+                            flex-direction: column;
+                        };
+                        a{
+                            text-decoration: none;
+                            color: $texte;
+                        }
                     }
                 }
+                .bouton1{
+                    font-size: 15px;
+                    padding: 6px 25px;
+                    border-radius: 20px;
+                    background-color: $fond;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    @media (max-width: 768px){
+                        width: max-content;
+                        margin-bottom: 10%;
+                    };
+                }
             }
-            .bouton1{
-                font-size: 15px;
-                padding: 6px 25px;
-                border-radius: 20px;
-                background-color: $fond;
-                color: white;
-                border: none;
-                cursor: pointer;
+            .icon{
+                display: none;
+                @media (max-width: 768px){
+                    display: contents;
+                };
             }
         }
     }
@@ -40,6 +67,9 @@ body{
         height: 90vh;
         background-repeat: no-repeat;
         background-size: cover;
+        @media (max-width: 768px){
+            background-position: center;
+        };
         .text{
             display: flex;
             flex-direction: column;
@@ -95,6 +125,9 @@ body{
             justify-content: space-between;
             color: white;
             padding-bottom: 150px;
+            @media (max-width: 768px){
+                flex-direction: column;
+            };
 
             
         }
@@ -113,6 +146,10 @@ body{
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
+        @media (max-width: 768px){
+            background-position: center;
+            
+        };
     }
     footer{
         background-color: $footer;
@@ -163,6 +200,9 @@ body{
         .politique{
             display: flex;
             justify-content: flex-end;
+            @media (max-width: 768px){
+                justify-content: center;
+            };
            
             p{
                 width: 25%;
