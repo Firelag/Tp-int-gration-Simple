@@ -1,1 +1,16 @@
-/*# sourceMappingURL=style.css.map */
+body header nav {
+  display: flex;
+  width: 80%;
+  align-items: baseline;
+  margin: auto;
+}
+body header nav h1 {
+  width: 60%;
+}
+body header nav ul li {
+  list-style: none;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: #808080;
+}/*# sourceMappingURL=style.css.map */
