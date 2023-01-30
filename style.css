@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 body header nav {
   display: flex;
   width: 80%;
@@ -87,10 +90,28 @@ body .section3 .bouton2 {
   cursor: pointer;
 }
 body .map {
-  background-image: url(./assets/section#map.png);
+  background-image: url(./assets/sectionmap.png);
   height: 100vh;
   background-size: cover;
+  background-repeat: no-repeat;
 }
-body .footer {
+body footer {
   background-color: #333232;
+  color: white;
+}
+body footer ul li {
+  list-style: none;
+}
+body footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+body footer .politique {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  margin: auto;
+}
+body footer .politique p {
+  width: 25%;
 }/*# sourceMappingURL=style.css.map */
