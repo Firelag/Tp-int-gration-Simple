@@ -7,10 +7,26 @@ body header nav {
 body header nav h1 {
   width: 60%;
 }
+body header nav ul {
+  width: 20%;
+}
 body header nav ul li {
   list-style: none;
 }
 body header nav ul li a {
   text-decoration: none;
   color: #808080;
+}
+body header nav .bouton1 {
+  font-size: 15px;
+  padding: 6px 25px;
+  border-radius: 20px;
+  background-color: #00E1FF;
+  color: white;
+  border: none;
+}
+body .hero {
+  background-image: url(./assets/hero.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
