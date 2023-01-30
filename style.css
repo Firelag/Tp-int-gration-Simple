@@ -24,6 +24,7 @@ body header nav .bouton1 {
   background-color: #00E1FF;
   color: white;
   border: none;
+  cursor: pointer;
 }
 body .hero {
   background-image: url(./assets/hero.jpg);
@@ -46,13 +47,18 @@ body .section2 {
   align-items: center;
   margin: auto;
   width: 60%;
-  margin-bottom: 10%;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-body .section2 h3 {
+body .section2 h2 {
   color: #00E1FF;
 }
 body .section3 {
   background-color: #00E1FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 150px;
 }
 body .section3 h4 {
   display: flex;
@@ -69,7 +75,7 @@ body .section3 .groupe {
   width: 60%;
   justify-content: space-between;
   color: white;
-  padding-bottom: 80px;
+  padding-bottom: 150px;
 }
 body .section3 .bouton2 {
   font-size: 15px;
@@ -78,4 +84,13 @@ body .section3 .bouton2 {
   background-color: #00E1FF;
   color: white;
   border: 2px solid white;
+  cursor: pointer;
+}
+body .map {
+  background-image: url(./assets/section#map.png);
+  height: 100vh;
+  background-size: cover;
+}
+body .footer {
+  background-color: #333232;
 }/*# sourceMappingURL=style.css.map */
