@@ -96,6 +96,7 @@ body .hero {
 @media (max-width: 768px) {
   body .hero {
     background-position: center;
+    height: 60vh;
   }
 }
 body .hero .text {
@@ -110,7 +111,7 @@ body .hero .text {
 }
 @media (max-width: 768px) {
   body .hero .text {
-    padding-top: 350px;
+    padding-top: 100px;
   }
 }
 body .hero .star {
@@ -140,14 +141,19 @@ body .section3 {
   align-items: center;
   padding-bottom: 150px;
 }
+@media (max-width: 768px) {
+  body .section3 {
+    padding-bottom: 10%;
+  }
+}
 body .section3 h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2em;
-  padding-top: 6%;
+  padding-top: 3%;
   color: white;
-  padding-bottom: 80px;
+  padding-bottom: 5%;
 }
 body .section3 .groupe {
   display: flex;
@@ -165,7 +171,7 @@ body .section3 .groupe {
 }
 @media (max-width: 768px) {
   body .section3 .groupe .block {
-    margin-bottom: 30%;
+    margin-bottom: 10%;
   }
 }
 body .section3 .bouton2 {
@@ -186,6 +192,8 @@ body .map {
 @media (max-width: 768px) {
   body .map {
     background-position: center;
+    height: 75vh;
+    background-size: auto;
   }
 }
 body footer {
