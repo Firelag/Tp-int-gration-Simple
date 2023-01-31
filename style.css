@@ -18,6 +18,7 @@ body header nav h1 {
 }
 body header nav #myLinks {
   display: flex;
+  width: 60%;
 }
 @media (max-width: 768px) {
   body header nav #myLinks {
@@ -26,6 +27,9 @@ body header nav #myLinks {
     margin-right: 15%;
   }
 }
+body header nav #myLinks ul {
+  width: 50%;
+}
 @media (max-width: 768px) {
   body header nav #myLinks ul {
     display: inline;
@@ -33,6 +37,8 @@ body header nav #myLinks {
 }
 body header nav #myLinks ul li {
   list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 }
 @media (max-width: 768px) {
   body header nav #myLinks ul li {
@@ -218,6 +224,11 @@ body footer .top .icon {
   justify-content: space-evenly;
   align-self: center;
 }
+@media (max-width: 768px) {
+  body footer .top .icon {
+    font-size: 0.6em;
+  }
+}
 body footer .top .icon i {
   border: 2px solid white;
   border-radius: 50%;
@@ -229,6 +240,8 @@ body footer .top .icon .fa-facebook {
 body footer .politique {
   display: flex;
   justify-content: flex-end;
+  width: 80%;
+  margin: auto;
 }
 @media (max-width: 768px) {
   body footer .politique {
@@ -238,4 +251,9 @@ body footer .politique {
 body footer .politique p {
   width: 25%;
   font-size: 0.8em;
+}
+@media (max-width: 768px) {
+  body footer .politique p {
+    font-size: 0.6em;
+  }
 }/*# sourceMappingURL=style.css.map */
