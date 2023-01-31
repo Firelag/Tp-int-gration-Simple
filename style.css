@@ -183,16 +183,33 @@ body .section3 .bouton2 {
   border: 2px solid white;
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  body .section3 .bouton2 {
+    font-size: 1.5em;
+  }
+}
 body .map {
   background-image: url(./assets/sectionmap.png);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 992px) {
+  body .map {
+    background-position: center;
+  }
+}
 @media (max-width: 768px) {
   body .map {
     background-position: center;
-    height: 75vh;
+    height: 60vh;
+    background-size: auto;
+  }
+}
+@media (max-width: 430px) {
+  body .map {
+    background-position: center;
+    height: 65vh;
     background-size: auto;
   }
 }
