@@ -29,6 +29,9 @@ body{
                 };
                 ul{
                     width: 50%;
+                    @media (max-width: 768px){
+                        width: initial;
+                    };
                     
                     li{
                         list-style: none;
@@ -241,7 +244,8 @@ body{
                 width: 25%;
                 font-size: 0.8em;
                 @media (max-width: 768px){
-                    font-size: 0.6em;
+                    font-size: 0.7em;
+                    width: 30%;
                 };
             }
         }

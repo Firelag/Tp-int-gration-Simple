@@ -32,6 +32,11 @@ body header nav #myLinks {
 body header nav #myLinks ul {
   width: 50%;
 }
+@media (max-width: 768px) {
+  body header nav #myLinks ul {
+    width: initial;
+  }
+}
 body header nav #myLinks ul li {
   list-style: none;
   display: flex;
@@ -251,6 +256,7 @@ body footer .politique p {
 }
 @media (max-width: 768px) {
   body footer .politique p {
-    font-size: 0.6em;
+    font-size: 0.7em;
+    width: 30%;
   }
 }/*# sourceMappingURL=style.css.map */
